@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>👿 이규성이규성이규성이규성 👿</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      font-family: Comic Sans MS, cursive, sans-serif;
+      animation: bgSpin 5s infinite linear;
+      overflow-x: hidden;
+    }
+
+    @keyframes bgSpin {
+      0% { filter: hue-rotate(0deg); }
+      100% { filter: hue-rotate(360deg); }
+    }
+
+    h1 {
+      font-size: 6em;
+      color: lime;
+      text-shadow: 5px 5px red;
+      text-align: center;
+      margin-top: 100px;
+      animation: shake 0.3s infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(5px); }
+      50% { transform: translateX(-5px); }
+      75% { transform: translateX(5px); }
+      100% { transform: translateX(0); }
+    }
+
+    img {
+      display: block;
+      margin: 50px auto;
+      border: 10px dashed yellow;
+      width: 300px;
+      transform: rotate(-15deg) scale(1.2);
+      box-shadow: 0 0 30px magenta;
+      transition: all 0.3s ease-in-out;
+    }
+
+    img:hover {
+      transform: rotate(360deg) scale(1.5);
+      box-shadow: 0 0 50px cyan;
+    }
+
+    .marquee {
+      width: 100%;
+      color: #ff0000;
+      font-size: 3em;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      background: black;
+      animation: glow 1s infinite alternate;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px red; }
+      100% { text-shadow: 0 0 20px yellow; }
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee"><div class="marquee-text">⚠️ 이규성이규성이규성이규성이규성이규성이규성이규성 ⚠️</div></div>
+  <h1>이규성 등장!!</h1>
+  <img src="./lee.jpeg" alt="이규성">
+</body>
+</html>
